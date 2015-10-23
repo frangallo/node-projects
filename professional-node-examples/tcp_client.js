@@ -1,6 +1,6 @@
 var net = require('net');
 var port = 4000;
-var conn = net.createConnection(port);
+var conn;
 
 process.stdin.resume();
 
@@ -12,11 +12,12 @@ process.stdin.resume();
   });
 
   conn.on('error', function(err) {
-    console.log('Error in connection:', err);
+    console.log('Error in connection:' + err);
   });
 
   conn.on('close', function() {
     console.log('connection got closed, will try to reconnet');
+    connect();
   });
 
   conn.pipe(process.stdout, {end: false});
