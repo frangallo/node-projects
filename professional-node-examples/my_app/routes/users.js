@@ -1,6 +1,9 @@
+
+var users = require('../data/users');
+
 module.exports = function(app) {
   app.get('/users/:name',function(req, res) {
-    var user = usres[req.params.name];
+    var user = users[req.params.name];
     if(user){
       res.render('users/profile', {title: 'User profile', user: user});
     } else {
