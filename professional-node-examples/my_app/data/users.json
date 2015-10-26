@@ -2,16 +2,19 @@
   "frank": {
               "username": "frank",
               "name": "Frank Sinatra",
-              "bio": "Singer"
+              "bio": "Singer",
+              "password": "theladyisatramp"
             },
   "jobim": {
               "username": "jobim",
               "name": "Antonio Carlos Jobim",
-              "bio": "Composer"
+              "bio": "Composer",
+              "password": "theladyisatramp"
             },
   "fred": {
               "username": "fred",
               "name": "Fred Astaire",
-              "bio": "Dancer and Actor"
+              "bio": "Dancer and Actor",
+              "password": "theladyisatramp"
           }
 }
