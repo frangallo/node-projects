@@ -1,5 +1,5 @@
-
 var users = require('../data/users');
+var notLoggedIn = require('./middleware/not_logged_in');
 
 module.exports = function(app) {
   app.get('/users/new', function(req, res) {
